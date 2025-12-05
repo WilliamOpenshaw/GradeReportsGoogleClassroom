@@ -1,6 +1,6 @@
 /*
 
-v1.2.2
+v1.2.4
 
 Google Classroom Grade Report Generator
 Works specifically for class graded by weight categories
@@ -12,9 +12,10 @@ https://github.com/WilliamOpenshaw
 
 */
 
-/**
+/*
  * @OnlyCurrentDoc  Limits the script to only accessing the current spreadsheet.
- */
+*/
+
 /*
 
 To use this script, you'll need to replace "yourITemail@email.com" with your actual IT email address in the sendEmails function.
