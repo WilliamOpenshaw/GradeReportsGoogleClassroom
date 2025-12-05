@@ -232,10 +232,10 @@ function ListCoursesAllTabsLocalArray()
   }
   
   //console.log("allstudents : " + allstudents[0]);
-  //console.log("Jordan is student number : " + allstudents["Jordan Wang"]);
+  //console.log("Student is student number : " + allstudents["studentName"]);
   //return;
-  //console.log("allStudentSheetTabsArray['Jordan Wang'] : " + allStudentSheetTabsArray["Jordan Wang"])
-  //console.log("allStudentSheetTabsArray['Jordan Wang'][0] : " + allStudentSheetTabsArray["Jordan Wang"][0])
+  //console.log("allStudentSheetTabsArray['studentName'] : " + allStudentSheetTabsArray["studentName"])
+  //console.log("allStudentSheetTabsArray['studentName'][0] : " + allStudentSheetTabsArray["studentName"][0])
   //console.log("allStudentSheetTabsArray : " + allStudentSheetTabsArray)
   //return;
   try
@@ -316,7 +316,7 @@ function ListCoursesAllTabsLocalArray()
       }
       // SKIPPING a specific course
       /*
-      if(course.name == "2025S Life Design and Careers")
+      if(course.name == "SPECIFIC_COURSE_NAME")
       {
         console.log("/////////////////////////////////////////////////////////////");
         console.log("/////////////////////////////////////////////////////////////");
