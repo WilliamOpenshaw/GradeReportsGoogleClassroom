@@ -58,13 +58,12 @@ In the `Sheet1` tab of your spreadsheet, you must provide student and guardian e
 | **J** | Guardian 3    | Email address of the third guardian.  |
 
 **Example Format:**
-```text
+
 Column G                    Column H            Column I            Column I
 StudentEmail1@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
 StudentEmail2@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
 StudentEmail3@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
 StudentEmail4@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
-```
 
 If you have more than 180 students, you'll have to change how many rows it reads in the script.
 
