@@ -1798,9 +1798,7 @@ function SendEmails()
     //var email = 
     var subject = currentStudentName + "'s Score Report for " + months[previousMonth];
     var body = "To a Guardian of " + currentStudentName + ", your child's score report is attached to this email as a PDF.";
-    //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/edit?gid=1850357927#gid=1850357927
-    //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/export?format=xlsx&gid=1850357927&portrait=true&exportFormat=pdf
-    //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/export?format=xlsx&gid=0&portrait=true&exportFormat=pdf
+    
 
     
     // CALCULATE PAGE HEIGHT SECTION
@@ -1891,7 +1889,7 @@ function SendEmails()
       email = email.replaceAll(" ", "");
       email = email.trim();
 
-      //if (emailSet == true && email == 'jen6372@yahoo.com')
+      //if (emailSet == true && email == 'emailAddress@email.com')
       if (emailSet == true)
       {
         //ENABLE for testing self-sending
@@ -2036,9 +2034,7 @@ function sendFailingStudentReportsToEthan()
       //var email = 
       var subject = currentStudentName + " Failled " + months[previousMonth];
       var body = "Hello, High Guardian of the Grades. This is a pdf score report for " + currentStudentName + ". You are recieving this email, because this pupil has been found wanting.";
-      //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/edit?gid=1850357927#gid=1850357927
-      //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/export?format=xlsx&gid=1850357927&portrait=true&exportFormat=pdf
-      //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/export?format=xlsx&gid=0&portrait=true&exportFormat=pdf
+      
       var url = "https://docs.google.com/spreadsheets/d/" +
         ssID +
         "/export?" +
@@ -2134,9 +2130,7 @@ function testSendEmail()
     //var email = 
     var subject = currentStudentName + "'s Score Report for October";
     var body = "Hello Guardian of " + currentStudentName + ". Your child's score report is attached to this email as a PDF.";
-    //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/edit?gid=1850357927#gid=1850357927
-    //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/export?format=xlsx&gid=1850357927&portrait=true&exportFormat=pdf
-    //https://docs.google.com/spreadsheets/d/1Oyqb2H2OpWH2sOkuMDcSTO1luH-kYfs0JMovSbMjtmY/export?format=xlsx&gid=0&portrait=true&exportFormat=pdf
+    
 
     // Get dynamic range
     var lastRow = sheets[sheet].getLastRow();
