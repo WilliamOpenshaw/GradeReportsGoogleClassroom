@@ -50,12 +50,12 @@ Before using this script, ensure you have the following:
 
 In the `Sheet1` tab of your spreadsheet, you must provide student and guardian emails in the following columns:
 
-| Column    | Header        | Content                               |
+| Column| Header        | Content                               |
 
-| **G**     | Student Email | The student's school email address.   |
-| **H**     | Guardian 1    | Email address of the first guardian.  |
-| **I**     | Guardian 2    | Email address of the second guardian. |
-| **J**     | Guardian 3    | Email address of the third guardian.  |
+| **G** | Student Email | The student's school email address.   |
+| **H** | Guardian 1    | Email address of the first guardian.  |
+| **I** | Guardian 2    | Email address of the second guardian. |
+| **J** | Guardian 3    | Email address of the third guardian.  |
 
 **Example Format:**
 ```text
@@ -64,6 +64,7 @@ StudentEmail1@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Emai
 StudentEmail2@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
 StudentEmail3@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
 StudentEmail4@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
+```
 
 If you have more than 180 students, you'll have to change how many rows it reads in the script.
 
