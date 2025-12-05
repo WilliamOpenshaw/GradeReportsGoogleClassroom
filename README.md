@@ -66,45 +66,33 @@ StudentEmail3@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Emai
 StudentEmail4@School.com    Parent1@Email.com   Parent2@Email.com   Parent3@Email.com
 ```
 
-If you have more than 180 students, you'll have to change how many rows it reads in the script.
-
-Configuration
+## Configuration
 You must modify a few lines in the script to match your specific environment:
 
-IT Email Address:
+### IT Email Address
+* Locate the `sendEmails` function.
+* Replace `"yourITemail@email.com"` with your actual IT/Admin email address.
 
-Locate the sendEmails function.
+### School Logo
+* Locate the `addLogo` function.
+* Replace the URL in the `insertImageToCellWithImageBuilder` function with the direct download link to your school's logo.
 
-Replace "yourITemail@email.com" with your actual IT/Admin email address.
+> **Note:** The URL format should look like `https://drive.google.com/uc?export=download&id=YOUR_IMAGE_ID`.
 
-School Logo:
-
-Locate the addLogo function.
-
-Replace the URL in the insertImageToCellWithImageBuilder function with the direct download link to your school's logo.
-
-Note: The URL format should look like https://drive.google.com/uc?export=download&id=YOUR_IMAGE_ID.
-
-Usage
+## Usage
 To generate the reports, run the functions in the specific order listed below. You can run these from the Apps Script editor toolbar.
 
-ListCoursesAllTabsLocalArray: Fetches course data and builds the initial student sheets.
+1.  **`ListCoursesAllTabsLocalArray`**: Fetches course data and builds the initial student sheets.
+2.  **`calculateGradesLocalArray`**: Calculates the weighted grades for all students.
+3.  **`setColumns`**: Formats the spreadsheet columns for readability.
+4.  **`addLogo`**: Inserts the school logo into the report headers.
+5.  **`sendEmails`**: Generates PDFs and emails them to the addresses listed in `Sheet1`.
 
-calculateGradesLocalArray: Calculates the weighted grades for all students.
-
-setColumns: Formats the spreadsheet columns for readability.
-
-addLogo: Inserts the school logo into the report headers.
-
-sendEmails: Generates PDFs and emails them to the addresses listed in Sheet1.
-
-Handling Timeouts
+## Handling Timeouts
 Google Apps Script has a 30-minute execution limit. If you have many courses or students, the script may time out.
 
-If the script stops, check the ListCoursesAllTabsLocalArray settings.
+* If the script stops, check the `ListCoursesAllTabsLocalArray` settings.
+* You can adjust variables like `startListCoursesFromSpecificCourse` and `courseNumberToContinueFrom` to resume processing from a specific course index.
 
-You can adjust variables like startListCoursesFromSpecificCourse and courseNumberToContinueFrom to resume processing from a specific course index.
-
-
-Disclaimer
+## Disclaimer
 This script is provided as-is. Please ensure you test the email functionality with a test address before sending reports to the entire student body.
