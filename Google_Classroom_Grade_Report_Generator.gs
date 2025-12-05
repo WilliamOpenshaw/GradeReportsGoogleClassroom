@@ -2034,7 +2034,7 @@ function sendFailingStudentReportsToEthan()
       //var email = 
       var subject = currentStudentName + " Failled " + months[previousMonth];
       var body = "Hello, High Guardian of the Grades. This is a pdf score report for " + currentStudentName + ". You are recieving this email, because this pupil has been found wanting.";
-      
+
       var url = "https://docs.google.com/spreadsheets/d/" +
         ssID +
         "/export?" +
@@ -2862,7 +2862,7 @@ function setActiveValue(value)
 // You can retrieve image as blob with DriveApp
 function getImageUrlFromDriveApi()
 {
-  const image = Drive.Files.get('1VkTPKsgu1nF5CUQXkct5izQ4E1q9epSI');
+  const image = Drive.Files.get('YOUR_FILE_ID');
 
   // From image JSON object we get a thumbnail link
   // Thumbnail link has default size set at the end '=s + size'
