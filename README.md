@@ -33,7 +33,7 @@ Before using this script, ensure you have the following:
 
 1.  **Google Workspace Account**: Access to Google Classroom and Google Drive.
 2.  **Google Sheet**: A new Google Sheet to host the script.
-3.  **Google Cloud Project**: You must enable the **Google Classroom API** and **Google Drive API** in the Apps Script Services menu.
+3.  **Google Appscript Extension Script Project**: You must enable the **Google Classroom API** and **Google Drive API** in the Apps Script Services menu.
 
 ## Setup & Installation
 
